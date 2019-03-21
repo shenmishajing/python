@@ -11,7 +11,10 @@ for c in s:
         flag = 1
     if c in table:
         l.append(c)
-n = int(''.join(l), 16)
+if l == []:
+    n = 0
+else:
+    n = int(''.join(l), 16)
 if flag:
     n = -n
 print(n)
